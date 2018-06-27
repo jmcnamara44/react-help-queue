@@ -17,7 +17,7 @@ var masterTicketList = [
     location: '9F',
     issue: 'Donkey picture not displaying on hover in Zoology app. :('
   }
-]
+];
 
 function TicketList(){
   return (
@@ -30,7 +30,7 @@ function TicketList(){
           key={index}/>
       )}
     </div>
-  )
+  );
 }
 
-export default TicketList
+export default TicketList;

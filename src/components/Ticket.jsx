@@ -13,13 +13,13 @@ function Ticket(props){
       <p><em>{props.issue}</em></p>
       <hr/>
     </div>
-  )
+  );
 }
 
 Ticket.propTypes = {
   names: PropTypes.string.isRequired,
   location: PropTypes.string.isRequired,
   issue: PropTypes.string
-}
+};
 
-export default Ticket
+export default Ticket;
