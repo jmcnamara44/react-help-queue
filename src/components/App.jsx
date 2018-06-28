@@ -5,6 +5,7 @@ import { Switch, Route } from 'react-router-dom';
 import NewTicketControl from './NewTicketControl';
 import vegetables from '../assets/images/vegetables.jpg';
 import Error404 from './Error404';
+
 class App extends React.Component {
 
   constructor(props) {
@@ -28,7 +29,7 @@ class App extends React.Component {
         <img src={vegetables}/>
         <Switch>
           <Route exact path='/' render={()=><TicketList ticketList={this.state.masterTicketList} />} />
-          <Route path='/newticket' render{()=><NewTicketControl onNewTicketCreation={this.handleAddingNewTicketToList} />} />
+          <Route path='/newticket' render={()=><NewTicketControl onNewTicketCreation={this.handleAddingNewTicketToList} />} />
           <Route component={Error404} />
         </Switch>
       </div>
