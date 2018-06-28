@@ -8,7 +8,7 @@ function Ticket(props){
         div {
           background-color: grey;
         }
-        `}</style>
+      `}</style>
       <h3>{props.location} - {props.names}</h3>
       <p><em>{props.issue}</em></p>
       <hr/>
