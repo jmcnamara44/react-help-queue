@@ -3,7 +3,6 @@ import Ticket from './Ticket';
 import PropTypes from 'prop-types';
 
 function TicketList(props){
-  console.log(props.ticketList);
   return (
     <div>
       <hr/>
@@ -11,7 +10,7 @@ function TicketList(props){
         <Ticket names={ticket.names}
           location={ticket.location}
           issue={ticket.issue}
-          timeOpen={ticket.timeOpen}
+          formattedWaitTime={ticket.formattedWaitTime}
           key={ticket.id}/>
       )}
 
