@@ -33,13 +33,9 @@ class App extends React.Component {
         id: ticketId,
         formattedWaitTime: newFormattedWaitTime
       };
+      console.log(this.props.masterTicketList);
       dispatch(action);
     });
-    // var newMasterTicketList = Object.assign({}, this.state.masterTicketList);
-    // Object.keys(newMasterTicketList).forEach(ticketId => {
-    //   newMasterTicketList[ticketId].formattedWaitTime = (newMasterTicketList[ticketId].timeOpen).fromNow(true);
-    // });
-    // this.setState({masterTicketList: newMasterTicketList});
   }
 
   render(){

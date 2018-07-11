@@ -15,6 +15,7 @@ export default (state = {}, action) => {
           formattedWaitTime: formattedWaitTime
         }
       });
+      console.log(newState);
       return newState;
 
     case c.UPDATE_TIME:
